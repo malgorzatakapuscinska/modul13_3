@@ -14,9 +14,6 @@ process.stdin.on('readable', function() {
                 process.stdout.write('Quitting app!\n');
                 process.exit();
                 break;
-            case '/sayhello':
-                process.stdout.write('hello!\n');
-                break;
             default:
                 process.stderr.write('Wrong instruction!\n');
         };
